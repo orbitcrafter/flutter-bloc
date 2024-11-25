@@ -28,10 +28,7 @@ class _MyAppState extends State<MyApp> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
-                  Text(BlocProvider.of<CounterCubit>(context)
-                      .state
-                      .counter
-                      .toString()),
+                  Text(state.counter.toString()),
                 ],
               ),
               floatingActionButton: Row(
